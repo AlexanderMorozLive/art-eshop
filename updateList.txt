@@ -1,0 +1,5 @@
+UPDATE `oc_product` SET `price` = '199' WHERE `model` LIKE '12345-1f1w%';
+UPDATE `oc_product` SET `price` = '199' WHERE `model` LIKE '12345-2342%';
+UPDATE `oc_product` SET `price` = '199' WHERE `model` LIKE '32345~ffs%';
+UPDATE `oc_product` SET `price` = '199' WHERE `model` LIKE '32345%';
+UPDATE `oc_product` SET `price` = '199' WHERE `model` LIKE '12345%';
