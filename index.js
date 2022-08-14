@@ -4,6 +4,10 @@ const warhouseArt = ['12345-1f1w', '12345-2342','32345~ffs', '12345', '32345']
 let warhouseTemp = []
 
 
+    // TODO
+    //
+    // добавить проверку на дубликаты на артикула с базы сайта
+
 for (let i = 0; i < warhouseArt.length; i++) {
     let re = /(^[0-9]+)(.*)/
     let str = `${warhouseArt[i]}`
@@ -12,14 +16,12 @@ for (let i = 0; i < warhouseArt.length; i++) {
     warhouseTemp.push([+regExp, warhouseArt[i]])
 }
 
-console.log(warhouseTemp)
 
 let temp = []
 
 for (let i = 0; i < warhouseTemp.length; i++) {
     for (let j = 0; j < siteArt.length; j++) {
         if (warhouseTemp[i][0] === siteArt[j][0]) {
-            console.log(warhouseArt[i])
             temp.push([warhouseArt[i], siteArt[j][1]])
         }
     }
@@ -28,4 +30,3 @@ for (let i = 0; i < warhouseTemp.length; i++) {
 
 console.log(temp)
 
-//   console.log(array_diff(warhouseArt, siteArt));
